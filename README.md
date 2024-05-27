@@ -33,3 +33,6 @@ Contributions are welcome! If you have any suggestions or improvements, feel fre
 ---
 
 This description highlights the main features of your project and provides a clear understanding of its scope and functionality.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+This project was developed with invaluable contributions from Mobeen Mazari and Shan Elahi, whose expertise, guidance, and support were instrumental in its successful completion. Their collaboration and dedication greatly enhanced the quality and functionality of this University Management System.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
