@@ -1,0 +1,72 @@
+University Management System
+Introduction:
+
+The University Management System is designed to manage and streamline various academic and administrative processes within a university. It leverages relational databases to handle data related to buildings, classrooms, departments, professors, students, courses, and academic records efficiently. This system ensures accurate data management and supports decision-making processes by providing reliable and organized information.
+
+ Tables:
+
+1. Building: This table stores information about the various buildings within the university campus.
+
+2. Classrooms: Contains details about the individual classrooms, including their locations within specific buildings.
+
+3. Departments: Holds data about the various academic departments within the university, such as their names and associated buildings.
+
+4. Professors: Stores personal and professional information about the professors, including their departmental affiliations.
+
+5. Students: Contains detailed records of all enrolled students, including personal information and enrollment dates.
+
+6. Courses: Contains information about the courses offered by the university, including their names and associated departments.
+
+7. New_Enrollments: Tracks the courses that students are enrolled in each semester.
+
+8. Current_Sem_Grades: Stores the grades students receive for their courses in the current semester.
+
+9. Academic_Detail: Contains detailed academic records of students, including their majors and GPA information.
+
+Relationships with Cardinalities:
+
+The University Management System employs several key relationships among its tables, ensuring a logically structured and efficient database:
+
+•	One building can contain multiple classrooms, establishing a one-to-many (1:N) relationship between the "Building" and "Classrooms" tables.
+•	Similarly, a building can house multiple departments, creating another one-to-many (1:N) relationship between the "Building" and "Departments" tables.
+•	Departments and professors have a one-to-many (1:N) relationship, as one department can employ multiple professors.
+•	Departments offer multiple courses, leading to a one-to-many (1:N) relationship between the "Departments" and "Courses" tables.
+•	Student-course enrollments are managed through a one-to-many (1:N) relationship between the "Students" and "New_Enrollments" tables.
+•	Conversely, one course can have multiple students enrolled, forming a one-to-many (1:N) relationship between the "Courses" and "New_Enrollments" tables.
+•	A student can have multiple grades for different courses, establishing a one-to-many (1:N) relationship between the "Students" and "Current_Sem_Grades" tables.
+•	Likewise, one course can have multiple students receiving grades, creating a one-to-many (1:N) relationship between the "Courses" and "Current_Sem_Grades" tables.
+•	Each student has one corresponding academic detail record, resulting in a one-to-one (1:1) relationship between the "Students" and "Academic_Detail" tables.
+
+These relationships collectively ensure robust data management and facilitate complex queries within the University Management System.
+
+Objectives:
+
+The primary objectives of the University Management System include:
+
+1. Efficiently manage information related to buildings, classrooms, departments, professors, students, and courses.
+2. Provide accurate and timely academic records and grades.
+3. Streamline enrollment processes and track student progress.
+4. Support administrative decision-making with reliable data.
+
+Scope:
+
+The scope of the University Management System encompasses:
+
+1. Management of physical infrastructure such as buildings and classrooms.
+2. Administrative oversight of departments and professors.
+3. Comprehensive tracking of student information from enrollment to graduation.
+4. Academic performance monitoring through grades and academic records.
+5. Management of course offerings and enrollments.
+
+Achievements:
+
+Key achievements of implementing the University Management System include:
+
+1. Improved accuracy and organization of university data.
+2. Enhanced ability to perform complex queries for administrative and academic purposes.
+3. Streamlined enrollment and grading processes.
+4. Better support for administrative decisions with reliable data insights.
+
+Conclusion:
+
+The University Management System provides a robust framework for managing university operations, encompassing everything from infrastructure to academic records. By leveraging relational databases and establishing clear relationships between different data entities, the system ensures efficient data management, supporting both administrative tasks and academic monitoring. As a result, the university can achieve greater operational efficiency and improved data accuracy, ultimately contributing to its overall success.
